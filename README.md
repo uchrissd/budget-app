@@ -2,13 +2,11 @@
 
 **Description**
 
-Dungeon Bud is a web application that allows Dungeons & Dragons players to save characters and campaigns to a database. The goal of the application is to help players save their campaign and character information to a database. Users have unique profiles where they can add, edit or delete the campaigns and characters that they have added to the database. They can also add their characters to other player’s campaigns or add other player's characters to the campaigns they have created.
-
-One thing our team noticed when developing this app is that there are no official, robust API’s for the Dungeons & Dragons game. If we were to scale this project up, taking on the task of building that API would be a goal of our team. It would allow for a more thorough campaign and character creation process.
+This budget app is designed to log deposits and expenses offline, regardless of whether the app is connected to wifi. When the user reconnects to the internet, the app will reflect the latest accounting once it updates the information in the database.
 
 **User Story**
 
-Given that I am someone who plays Dungeons & Dragons regularily, I want to be able to store information about my characters and the campaigns I have created or am involved with in an online application.
+Given that I am someone who wants to track a budget, I would like the ability to use a web app that can store deposits and expenses both on and offline.
 
 **Build status**
 
@@ -16,13 +14,7 @@ The build status is complete.
 
 **Code style**
 
-Dungeon Bud is written in JavaScript. The back end of the application functions within the Node.js framework. We are using a MySql database with three tables: characters, campaigns and users. We used the Node.js Sequelize library to generate these tables.
-
-Our application relies on the Node.js Express server library to handle our server and routing.
-
-The front-end of the application uses jQuery for handling any dynamic HTML rendering via JavaScript as well as our API calls to the Dungeons & Dragons API for class and race information.
-
-Our team used the Google Materialize library to design our grid system and some of the application’s styling, like buttons, drop-downs and modals. We also used customs CSS styling for other parts of the application, like fonts, logo and backgrounds.
+The budget app is written in Javascript and Node.js using an Express server, a Mongo database, and Mongoose to handle setting the database.
 
 **Screenshots**
 
@@ -31,7 +23,7 @@ Our team used the Google Materialize library to design our grid system and some 
 **Code Example**
 
 ```javascript
-//Create new character
+//Index.js example
 let transactions = [];
 let myChart;
 
@@ -184,14 +176,4 @@ document.querySelector("#sub-btn").addEventListener("click", function(event) {
 
 **Installation**
 
-No installation necessary. Project is hosted here: https://dungeon-bud.herokuapp.com/
-
-**Future development**
-
-Our team identified several opportunities for further developing Dungeon Bud. These would include additional database tables to create more associations between users, developing our own Dungeons & Dragons API, a more robust character creation process, and the ability to build characters based on which version of the game you are using.
-
-**Credits**
-
-API used: https://www.dnd5eapi.co/ (for Dungeons & Dragons 5th Edition)
-Libraries: Materialize CSS by Google
-Developers: Courtney Tucker (Github: Ctucker9233), Brendan Berry (Github: berrybrendan), Christopher Underwood (Github: uchrissd), Blake Fogle (Github: foglebd)
+No installation necessary. Project is hosted here: https://ucsd-budget-app.herokuapp.com/
