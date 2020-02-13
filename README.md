@@ -18,7 +18,7 @@ The budget app is written in Javascript and Node.js using an Express server, a M
 
 **Screenshots**
 
-![Browser screenshot](/Screenshots/app-screenshot.jpg)
+![Browser screenshot](app-screenshot.jpg)
 
 **Code Example**
 
